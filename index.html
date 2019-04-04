@@ -1,0 +1,361 @@
+<!DOCTYPE html> <!-- CECI EST UNE INSRTUCTION POUR DIRE LA VERSION DU HTML; CE SERA DU HTML5-->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> <!-- pour l'encodage; pour pouvoir representer tous les chararcteres dans toutes les langues -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="La Kitchenette de Sylviane est un site présentant les oeuvres culinaires de Sylviane Bodjona et par la même occasion ses compétences en matière de développement web.">
+    
+    <link rel="stylesheet" type="text/css" href="Style/styleModalGalerie.css"> <!-- Pour le style de la div qui saffiche quand je clique sur une image -->
+     <link rel="stylesheet" type="text/css" href="Style/querietest.css"> <!-- Le fichier des media querie que jai cree et qui se charge de gerer ma page en fonction de la taille de lecran pour la rendre responsive  -->
+ <!-- LIENS BOOTSTRAP POUR css 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
+      <link rel="stylesheet" type="text/css" href="FichiersImportes/CSS/animatedcss.css"><!--pour le animate css -->
+    <link rel="stylesheet" type="text/css" href="FichiersImportes/CSS/normalize.css"><!-- le fichier css que jai telecharger pour normaliser mon code css et le rendre visuelement pareil sur n<importe quel navigateur-->
+         <link rel="stylesheet" type="text/css" href="FichiersImportes/CSS/grid.css"> <!-- le fichier grid que jai telecharge pour pouvoir optimiser mon style selon la taille de lecran-->
+    <link rel="stylesheet" type="text/css" href="Style/styleindex.css"> <!-- mon propre fichier css pour styler ma page-->
+ <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet"><!-- lien vers le font google que jutilse pour ma page -->
+    
+   
+    <title> La Kitchenette de Sylviane </title>
+    
+    <!-- POUR LES ICONS QUI SAFFICHERONT POUR AFIN DIDENTIFIER MA PAGE 
+    JAI OBTENU TOUS CES LIENS EN UTILISANT UN GENERATEUR DE FAVICON 
+    LIEN: https://realfavicongenerator.net/   -->
+    <link rel="apple-touch-icon" sizes="180x180" href="iconslogo/apple-touch-icon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="iconslogo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="iconslogo/favicon-16x16.png">
+<link rel="manifest" href="iconslogo/site.webmanifest">
+<link rel="mask-icon" href="iconslogo/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="iconslogo/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="iconslogo/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    
+</head>
+
+<body>
+    
+        <!-- BIENVENUE -->
+    <header>
+        <nav class="sticky" id="thesticky">
+        <div class="row"> 
+            <img src="Images/logoKS.png" alt="Kitchenette Sylviane" class="logoKS" id="logokit">
+            <img src="Images/logoKS.png" alt="Kitchenette Sylviane" class="logoKS2" >
+            <ul class="main-nav js--main-nav" id="themainnav">
+            <li> <a href="#features">A Propos</a></li>
+                <li> <a href="#galerie2">Galerie</a></li>
+                <li> <a href="#recruteur">Je suis recruteur</a></li>
+                <li> <a href="#contact">Contactez moi</a></li>
+            </ul>
+            <a class="mobile-nav-icon js--nav-icon" id="themobile-nav-icon"> <ion-icon name="menu"></ion-icon> </a>
+            </div>
+        </nav>
+       
+    <div class="thehello-text-box">
+        <h1> Bienvenue dans ma petite cuisine<br/>baptisée La Kitchenette de Sylviane!</h1>
+        <a class="btn btn-full js--scroll-to-galerie" href="#"> J'ai faim </a>
+        <a class="btn btn-ghost js--scroll-to-apropos" href="#"> Voir plus </a>
+        </div>
+          
+    </header>
+    
+        <!-- PRESENTATION -->
+    <section class="section-features js--section-features" id="features">
+        <div class="row">
+        <h2> Que du bonheur dans mon assiette</h2>
+            <p class="long-copy">
+            Salut! Je m'appele Sylviane. Bienvenue dans ma kitchenette. Ceci est un projet personnel qui vise à dévoiler mes talents de cuisinière et de developpeuse web front-end. J'ai le plaisir de partager avec vous des images de mes réalisations culinaires. Elles proviennent d'un album que j'ai crée depuis maintenant plus d'un an et que je mets à jour à chaque fois que je crée du bonheur dans ma cuisine. Par ailleurs, à travers ce projet, j'ai l'occasion de démontrer mes capacités en tant que programmeuse. En effet, de la réalisation du logo à la mise en ligne de ce site en passant par sa conception, j'ai pu mettre en pratique toutes les connaissances que j'ai acquises tout au long de mon curcus scolaire et lors de mes recherches personnelles. Je vous invite à parcourir les différentes sections, surtout la section Galerie et vous souhaite une très belle visite dans mon petit univers !! <br/> Sylviane
+            </p>
+        </div>
+        
+         <div class="row monblocinfo js--row-info">
+        <div class="col span-1-of-4 boite">
+            <img src="Images/chapo.png" alt="Chapeau de chef" class="iconDesc">
+            <h3> Es-tu chef ou bloggeuse culinaire?</h3>
+            <p>
+            NON! je ne suis ni chef cuisinière ni bloggeuse culinaire. Je n'ai encore créé aucun met ni inventé aucune recette. J'ai appris à cuisiner en aidant maman, en regardant des vidéos sur Youtube et en suivant plusieurs comptes de cuisine sur les réseaux sociaux. Par conséquent, vous ne trouverez aucune recette ni aucune section "Commander" sur ce site, car c'est juste pour le fun! Par contre, toutes ces images ont bel et bien été prises par moi et vous montrent des mets que j'ai moi-même réalisés.
+            </p>
+             </div>
+            
+             <div class="col span-1-of-4 boite">
+                 <img src="Images/cuisine.png" alt="Ustensils" class="iconDesc">
+            <h3> Pourquoi "La Kitchenette de Sylviane"?</h3>
+                 <p> Tout simplement parce que j'ai une toute petite cuisine! Donc par "Kitchenette" j'entends "petite cuisine". Malgré qu'elle soit petite, je dispose de plusieurs tiroirs et armoires à rangement. Mon frigo est orné de quelques photos de famille et amis proches. Le coin thé de la maison se situe près du micro-ondes. Sur le comptoir, des roses rouges, une boîte à sucrerie et une règle décorative sur laquelle est mentionnée:  "La vie est trop courte pour se priver de dessert". L'ambiance parfaite pour créer du bonheur.    </p>
+             </div>
+            
+             <div class="col span-1-of-4 boite">
+                 <img src="Images/pieuvre.jpg" alt="La pieuvre" class="iconDesc">
+            <h3> Pourquoi y a-t-il une pieuvre sur ton logo?</h3>
+                 <p>  Mes amis m'ont surnommé "La pieuvre" après une partie d'un jeu de société où j'ai mystérieusement trouvé en 2 secondes le mot mimé haha! Dans cette optique comique, j'ai pensé à rajouter une pieuvre avec un chapeau de chef sur mon logo. Je sais que ce petit logo en fera rigoler plus d'un ! <u>Ps:</u> Oui, c'est moi qui ait conçu mon propre logo! </p>
+             </div>
+             
+             <div class="col span-1-of-4 boite">
+                 <img src="Images/dessert.jpg" alt="Dessert" class="iconDesc">
+            <h3> Sucré ou salé?</h3>
+                 <p> Sucré !! J'aime beaucoup les plats sucrés, c'est ce qui m'a poussé à m'interesser à la pâtisserie. La première fois que j'ai réalisé des crêpes c'était une vraie catastrophe. Aujourd'hui, je fais de délicieuses crêpes. Volonté et pratique sont les clés de tout apprentissage réussi. Pas de plat principal pour moi, juste le dessert merci ! </p>
+             </div>
+        </div>
+    </section>
+    
+    <!-- GALERIE -->
+    <section class="section-galerie js--section-galerie" id="galerie1">
+    <ul class="galerie-showcase clearfix">
+        <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal1.JPG" alt="Image absente" id="gal1" onclick="growImage($(this).attr('id'))" >
+            </figure>
+        </li>
+         <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal2.JPG" alt="Image absente" id="gal2" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+         <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal3.JPG" alt="Image absente" id="gal3" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+         <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal4.JPG" alt="Image absente" id="gal4" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+        </ul>
+        
+        <ul class="galerie-showcase2 clearfix">
+  <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal5.JPG" alt="Image absente" id="gal5" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+             <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal6.JPG" alt="Image absente" id="gal6" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+             <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal7.JPG" alt="Image absente" id="gal7" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+             <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal8.JPG" alt="Image absente" id="gal8" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+        </ul>
+        
+         <!-- The Modal / La div qui va contenir la plus grande image quand on clique sur la petite -->
+                                 <div id="myModal" class="modal row">
+                                      <span class="close">&times;</span>
+                                       <div id="caption" class="thecaption"></div>
+                                      <img class="modal-content" id="img01">
+                                     
+                                    </div> 
+        
+    </section>
+    
+       <!-- RECRUTEURS -->
+    <section class="section-recruteur" id="recruteur">
+    <div class="row"> 
+        <h2> Ce que je sais faire d'autre </h2>
+               <p class="long-copy">
+        Mes deux années d'études en informatique de gestion, mon expérience en entreprise lors de mon stage de fin de formation et mes différents projets personnels m'ont permis de faire face à de nombreux défis et d'être à l'aise en équipe tout en sachant travailler de façon autonome. Ce site est l'un de mes projets personnels et vise à démontrer mes compétences en matière de developpement web. Je souhaite aujourd'hui élargir mon horizon créatif en mettant ces compétences aux services d'une compagnie innovante. Voici ce que je sais faire:
+            </p>
+    </div>
+        <div class="row">
+        <div class="col span-1-of-2 mescompetences">
+            <img src="Images/competences.png" alt="l'image est absente" class="langages js--row-imgcomp">
+            </div>
+            <div class="col span-1-of-2 mescompetences">
+            <div class="competences"> 
+                <div> 1</div>
+                <p> Mes langages de prédilection sont entre autres HTML5, CSS3, JAVASCRIPT, ANGULAR JS, PHP, JAVA, C#, VB.Net</p>
+                </div>
+                <div class="competences"> 
+                <div> 2</div>
+                <p> Les environnements de développement (IDE) avec lesquels je travaille sont VISUAL STUDIO, ECLIPSE, NETBEANS, ANDROID STUDIO </p>
+                </div>
+                <div class="competences"> 
+                <div> 3</div>
+                <p> Je gère essentielement mes bases de données avec PHP MyAdmin et SQL Server. Je sais également manier les outils multimédias comme PHOTOSHOP, ADOBE PREMIERE, ADOBE AFTER EFFECT</p>
+                </div>
+                
+            </div>
+           
+        </div>
+       <!--  <a href="#" class="btn-engager"> <img src="Images/bouttonengager.png" alt="On te veux! Image absente" class="btn-engagerimg" > </a> -->
+    </section>
+    
+        <!-- GALERIE2 -->
+    <section class="section-galerie" id="galerie2">
+    <ul class="galerie-showcase clearfix gal2">
+        <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal9.JPG" alt="Image absente" id="gal9" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+         <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal10.JPG" alt="Image absente" id="gal10" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+         <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal11.JPG" alt="Image absente" id="gal11" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+         <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal12.JPG" alt="Image absente" id="gal12" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+        </ul>
+        
+        <ul class="galerie-showcase2 clearfix">
+  <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal13.JPG" alt="Image absente" id="gal13" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+             <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal14.JPG" alt="Image absente" id="gal14" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+             <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal15.JPG" alt="Image absente" id="gal15" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+             <li>
+            <figure class="galeriephoto">
+                <img src="Images/gal16.JPG" alt="Image absente" id="gal16" onclick="growImage($(this).attr('id'))">
+            </figure>
+        </li>
+        </ul>
+    </section>
+    
+      <!-- CONTACTS -->
+    <section class="section-contact" id="contact">
+    <div class="row"> 
+        <h2> Je serai ravie de recevoir votre message</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="https://formspree.io/morinebodjona@gmail.com" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                <label for="nom"> Nom </label>
+                </div>
+                <div class="col span-2-of-3"> 
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                </div>
+                         </div>
+                
+                 <div class="row">
+                <div class="col span-1-of-3">
+                <label for="email"> Courriel </label>
+                </div>
+                <div class="col span-2-of-3"> 
+                    <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+                </div>
+                         </div>
+                
+                 <div class="row">
+                <div class="col span-1-of-3">
+                <label for="trouvezmoi"> Comment avez-vous découvert ce site ? </label>
+                </div>
+                <div class="col span-2-of-3"> 
+       <select name="trouvezmoi" id="trouvezmoi">
+  <option value="LinkedIn" selected> LinkedIn</option>
+  <option value="amis"> Amis</option>
+<option value="moteur"> Moteur de recherche</option>
+  <option value="autres"> Autres</option>
+       </select>
+                </div>
+                </div>
+                
+                <div class="row">
+                <div class="col span-1-of-3">
+                <label> Etes-vous interessé par mon travail? Écrivez moi! </label>
+                </div>
+                <div class="col span-2-of-3"> 
+                   <textarea name="message" id="message" placeholder="Votre message..."></textarea>
+                </div>
+                         </div>
+                
+                <div class="row">
+                <div class="col span-1-of-3">
+                <label> &nbsp; </label>
+                </div>
+                <div class="col span-2-of-3"> 
+                    <input type="submit" value="Envoyer!" name="butsendmail">
+                </div>
+                         </div>
+            </form>
+        </div>
+        
+ 
+        <!-- 
+POUR LA GESTION DU FORMULAIRE EN PHP 
+
+<div>
+<?php
+require_once ("php/sendemail.php"); 
+//echo "oui";
+?> 
+   </div> -->
+        </section>
+    
+    <!-- FOOTER -->
+    <footer>
+    <div class="row">
+        <div class="col span-1-0f-2">
+        <ul class="footer-nav" id="thefootnav">
+            <li> <a href="#features">A Propos</a></li>
+             <li> <a href="#galerie1">Galerie 1</a></li>
+            <li> <a href="#galerie2">Galerie 2</a></li>
+            </ul>
+        </div>
+        
+        <div class="col span-1-0f-2 thelinks" id="sociallinks">
+        <ul class="social-links">
+            <li> <a href="https://www.linkedin.com/in/sylviane-bodjona-7a676315a/"><ion-icon name="logo-linkedin" class="linkedinicon"></ion-icon></a></li>
+            <li> <a href="https://www.facebook.com/sylviane.bodjona.12"><ion-icon name="logo-facebook" class="facebookicon"></ion-icon></a></li>
+              <li> <a href="https://www.instagram.com/raikes_/"><ion-icon name="logo-instagram" class="instagramicon"></ion-icon></a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="row" id="thecopyright">
+        <p> Copyright &copy; 2019 by La Kitchenette de Sylviane</p>
+        </div>
+    </footer>
+    
+     <!--FOR JAVASCRIPT/ liens vers la source externe et interne au cas ou il y a probleme de connexion-->
+    <!-- EXTERNE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- INTERNE -->
+    <script type="text/javascript" src="JS/jquery-3.1.1.min.js"></script>
+
+    <!-- Liens vers source pour les icons -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    
+ <!-- LIENS VERS LES FICHIERS INTERNES -->
+    <script src="FichiersImportes/JS/jquery.waypoints.min.js"></script>
+    <script src="JS/jsscript.js"> </script>
+     <script src="JS/imageClick.js"> </script>
+  <!--  <script src="JS/sendemailjavascript.js"> </script> -->
+    
+    <!-- LIENS BOOTSTRAP POUR JS, Popper.js, ET jQuery 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+</body>
+
+    
+    
+</html>

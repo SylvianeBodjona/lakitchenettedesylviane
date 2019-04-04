@@ -1,0 +1,59 @@
+/* == grandes tablettes a 1200PX */
+@media only screen and (max-width:1200px)
+{
+        .thehello-text-box
+    {
+
+       width: 100%;
+        padding: 0 10%;
+
+    }
+
+    .row{
+    padding: 0 2%;
+    }
+}
+
+/* QUAND LA TAILLE DE LECRAN EST ENTRE 768PX ET 1023PX INCLUSIVEMENT == petites tablettes a grandes tablettes */
+@media only screen and (max-width:1023px)
+{
+  /*  body { font-size: 18px; }
+     section {padding: 60px 0; }
+    .long-copy{
+    width: 80%;
+        margin-left: 10%;
+    }
+    
+    .mescompetences{margin-top: 10px;}
+    .mescompetences:last-child { margin-top: 10px; }
+    .competences{margin-bottom: 40px;}
+    .competences:last-of-type { margin-bottom: 60px; }
+    
+     .contact-form { width: 80%; }
+*/
+}
+
+
+/* QUAND LA TAILLE DE LECRAN EST ENTRE 481PX ET 767PX INCLUSIVEMENT == petits telephones jusqua petites tablettes*/
+@media only screen and (max-width:767px)
+{
+ /*    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    .row,
+    .thehello-text-box { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+*/
+}
+
+
+
+/* QUAND LA TAILLE DE LECRAN EST INFERIEUR OU EGALE A 480PX == petits telephones*/
+@media only screen and (max-width:480px)
+{
+
+}
